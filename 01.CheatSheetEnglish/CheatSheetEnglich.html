@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Web Techniques</title>
+    <link rel="stylesheet" href="CheatSheetEnglish.css">
+</head>
+<body>
+<h1>Basic Web Techniques</h1>
+<h2>Understanding the Structure of a URL</h2>
+<h3>Scheme, Server and Page</h3>
+<ul>
+    <li><strong>Scheme</strong>: the protocol used to access a resource on the internet http, https.</li>
+    <li><strong>URL (Uniform Resource Locator)</strong>: the address used to access a resource on a web server. It
+        contains the scheme, domain name, path, and sometimes a query or fragment.
+    </li>
+    <li><strong>Server</strong>: a computer or system that hosts a website or web application, serving the files or
+        content to users over the internet.
+    </li>
+    <li><strong>Page</strong>: is a specific file or document on the website, often written in HTML, that a user
+        accesses
+        via a URL. The page is part of the web content hosted on the server.
+    </li>
+</ul>
+
+<h2>Web Browsers & Web Servers</h2>
+<ul>
+    <li><strong>Web Browser</strong>: software that allows users to access, retrieve, and view content on the
+        internet, such as web pages, images, and videos, by interpreting HTML and other web technologies.
+    </li>
+    <li><strong>Web Server</strong>: a computer system that hosts websites and delivers web content to users' browsers
+        over the internet when they request it, through the HTTP or HTTPS protocols.
+    </li>
+</ul>
+
+<h2>History of the World Wide Web</h2>
+<article>
+    <ul>
+        <li>Tim Berners-Lee</li>
+        <li>the problem of storing, updating, and finding documents and data files</li>
+        <li>the common tree structure</li>
+        <li>in tagging files with keywords</li>
+        <li> hyperlinks associated with "hot spots"</li>
+        <li>to support links between multiple databases on independent computers
+            to allow simultaneous access by many users from any computer on the Internet,
+            other media besides text, such as graphics, speech, and video
+        </li>
+        <li>"gateways" - access file systems</li>
+        <li>decentralized, without any central control</li>
+    </ul>
+</article>
+<p>
+<ul>
+    <li>by the end of 1990</li>
+    <li>including a browser called WorldWideWeb and an HTTP server
+    <li>the HTTP protocol</li>
+    <li>the basic URL syntax</li>
+    <li> implicitly made HTML the primary document format</li>
+    <li>Marc Andreessen and Jim Clark founded Netscape 1994 Navigator browser
+    <li> introduced Java and JavaScript to the Web</li>
+    <li>Microsoft own browser - Internet Explorer</li>
+    <li>browser wars</li>
+    <li>World Wide Web Consortium (W3C) -the main international standards organization for the World Wide Web
+    <li>Founded in 1994 and led by Tim Berners-Lee</li>
+</ul>
+<h2>URL</h2>
+<ul>
+    <li>
+        A uniform resource locator (URL)
+    </li>
+    <li>
+        address on the Web
+    </li>
+    <li>Most web browsers display the URL of a web page</li>
+    <li>Early WorldWideWeb collaborators including Berners-Lee
+        originally proposed the use of UDIs: Universal Document
+        Identifiers
+    </li>
+</ul>
+
+<h3>Syntax</h3>
+<p>Every HTTP URL conforms to the syntax of a generic URI.</p>
+<ul>
+    <li> URI = scheme ":" ["//" authority] path ["?" query] ["#" fragment]</li>
+    <li>
+        scheme: case-insensitive, http, https..
+    </li>
+    <li>authority - an optional userinfo, a host subcomponent, (including but not limited to a hostname) or an IP
+        address
+    </li>
+    <li>An optional port</li>
+    <li>A path component</li>
+    <li>By convention, in http and https URIs, the last part of a path is named path info and it is optional</li>
+    <li>An optional query - query string of non-hierarchical data</li>
+    <li>An optional fragment component preceded by a hash (#)</li>
+</ul>
+
+<h2>Web Server</h2>
+
+<p>A web server is computer software and underlying hardware.</p>
+
+<ul>
+    <li>accepts requests via HTTP/HTTPS</li>
+    <li>server responds -content or error</li>
+    <li>store resources</li>
+    <li>the low end - embedded systems - router - runs a small web server as its configuration interface</li>
+    <li>resource sent from a web server - file (static content) or (dynamic content)</li>
+</ul>
+
+
+<h3>Web Client</h3>
+<h4>Web browser</h4>
+<p> application for accessing websites
+<ul>
+    <li>
+        user requests a web page
+        <li>the browser retrieves its files from a web server</li>
+    <li>displays the page on the user's
+        screen</li>
+    <li>desktops, laptops, tablets, and smartphones</li>
+    <li>web browser != search engine</li>
+</ul>
+
+<h4>Function</h4>
+<p>
+<ul>
+    <li>to fetch content and display it on the user's device</li>
+    <li>Uniform Resource Locator (URL)</li>
+    <li>are retrieved with the Hypertext Transfer Protocol (HTTP). For secure mode (HTTPS)</li>
+    <li>the connection encrypted</li>
+    <li>use an internal cache of web page resources</li>
+    <li>cookies stored by the browser - contain login credentials ,tracking user behavior
+    </li>
+    <li>Finer-grained management</li>
+</ul>
+
+<h4>&lt;!DOCTYPE&gt;</h4>
+<p>
+    The declaration is not an HTML tag.
+</p>
+<h4>&lt;body&gt;</h4>
+<p>tag defines the document's body
+    The &lt;body&gt; tag also supports the Global Attributes in HTML.
+</p>
+<h4>&lt;em&gt;</h4>
+<p>displayed in italic</p>
+<h4>&lt;head&gt;</h4>
+<p>metadata-not displayed-title, character set, styles, scripts</p>
+<p>default values display none </p>
+<h4>&lt;html&gt;</h4>
+<p>represents the root of an HTML document</p>
+<p> container for all other HTML elements </p>
+<p>default display block; focus outline:none</p>
+<h4>&lt;strong&gt;</h4>
+<p> text with strong importance - bold</p>
+<p>font-weight: bold; </p>
+<p>&lt;b&gt; no extra importance!</p>
+<h4>&lt;title&gt;</h4>
+<p>the title of the document,text-only,title bar or in the page's tab </p>
+<p>f important for search engine optimization</p>
+<p>default display: none</p>
+
+</body>
+</html>
+

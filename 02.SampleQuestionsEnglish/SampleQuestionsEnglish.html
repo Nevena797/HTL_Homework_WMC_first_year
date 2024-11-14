@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Questions - Basic Web Techniques</title>
+    <link rel="stylesheet" href="SampleQuestionsEnglish.css">
+</head>
+<body>
+<h2>Sample Questions - Basic Web Techniques</h2>
+
+<h3>Word Wide Web General</h3>
+<p><strong>What are the most essential technologies that made the World Wide Web such a success?</strong></p>
+<ol>
+    <li>Hypertext Transfer Protocol (HTTP)</li>
+    <li>Uniform Resource Locator (URL)</li>
+    <li>Hypertext Markup Language (HTML)</li>
+    <li>Web Browsers</li>
+    <li>Domain Name System (DNS)</li>
+    <li>Search Engines</li>
+    <li>JavaScript</li>
+    <li>Cascading Style Sheets (CSS)</li>
+    <li>Web Servers and Databases</li>
+    <li>Secure Sockets Layer (SSL) and HTTPS</li>
+    <li>Content Delivery Networks (CDNs)</li>
+    <li>Responsive Design and Mobile Web Technologies</li>
+    <li>APIs and Web Services (REST, SOAP)</li>
+    <li>Social Media and User-Generated Content Platforms</li>
+</ol>
+
+<p><strong>How are resources (html pages, images, etc. ) addressed in the web?</strong></p>
+<ol>
+    <li>are addressed using URLs (Uniform Resource Locators)</li>
+    <li>provide a standardized way the location of each resource</li>
+</ol>
+
+
+<p><strong>What are the general components of an url?</strong></p>
+<ol>
+    <li><strong>Protocol</strong>: Specifies the communication method, usually http or https.</li>
+    <li><strong>Domain</strong>: The server's address (e.g., example.com).</li>
+    <li><strong>Port (optional)</strong>: The server's port, defaulting to 80 for http and 443 for https (e.g., :8080).
+    </li>
+    <li><strong>Path</strong>: The specific location of the resource on the server (e.g., /images/photo.jpg).</li>
+    <li><strong>Query (optional)</strong>: Key-value pairs for dynamic content, starting with ? (e.g., ?search=web).
+    </li>
+    <li><strong>Fragment (optional)</strong>: A section within the resource, starting with # (e.g., #section1).</li>
+</ol>
+
+<h3>Web Server</h3>
+
+<p><strong>What is a web server?</strong></p>
+<p>A web server is a computer system or software that hosts websites and serves web content to users over
+    the internet. It receives requests from clients (like browsers), processes them, and delivers the requested
+    resources—such as HTML pages, images, or data—via HTTP or HTTPS protocols. Examples include Apache,
+    Nginx, and Microsoft IIS.</p>
+
+<p><strong>What does a web server?</strong></p>
+<p> A web server is a computer system or software that hosts websites and serves web content to users over
+    the internet. It receives requests from clients (like browsers), processes them, and delivers the
+    requested resources—such as HTML pages, images, or data—via HTTP or HTTPS protocols. Examples include
+    Apache, Nginx, and Microsoft IIS.</p>
+<p><strong>How can content be stored on a web server?</strong>
+<ol>
+    <li>Static Files: HTML, CSS, JavaScript, images, videos, and documents are stored as files directly on the
+        server’s file system. These files are served exactly as they are, with no modifications.
+    </li>
+
+    <li>Databases: Dynamic content, such as user data, product information, and posts, is stored in databases
+        like MySQL, PostgreSQL,
+        or MongoDB. The web server retrieves this data based on user requests, often
+        generating pages dynamically.
+    </li>
+
+    <li>Content Management Systems (CMS): Systems like WordPress or Drupal store content in a database and allow
+        easy management and publishing of content via a user-friendly interface.
+    </li>
+
+    <li>Cloud Storage: Some content, especially large files like media, may be stored in cloud storage (e.g.,
+        AWS S3) and accessed via URLs, reducing load on the main web server.
+    </li>
+</ol>
+
+<p><strong>How is content in webpages described?</strong></p>
+<p>Content in webpages is described using HTML (HyperText Markup Language).
+    HTML structures the content with elements like headings, paragraphs, images, links, and lists, defining
+    the layout and meaning of the information. CSS (Cascading Style Sheets) is used to style and format the
+    HTML elements, while JavaScript adds interactivity and dynamic behavior to the content.</p>
+
+<h2>Web Client</h2>
+<p><strong>What is a web client?</strong></p>
+<p>A web client is a software or device, typically a web browser (like Chrome or Firefox), that
+    requests and displays content from a web server. It sends HTTP requests for resources (like web
+    pages or images) and renders the response for the user to interact with.
+</p>
+
+<p><strong>What does a web client?</strong></p>
+<p>A web client is a software or device that requests and displays content from a web server. It
+    typically sends HTTP requests to retrieve resources like web pages, images, or data, and then
+    renders the content for the user to interact with. Common web clients include web browsers (like
+    Chrome, Firefox, or Safari) and apps that use web-based content.</p>
+
+<p><strong>Web Client and Web Browser is the same?</strong></p>
+<ul>
+    <li>While web client and web browser are closely related, they are not exactly the same:</li>
+
+    <li>Web Client: Refers to any software or device that interacts with a web server to request and display
+        web content. A web client can be a web browser, but it could also be other types of applications
+        (e.g., mobile apps or command-line tools) that request web resources.
+    </li>
+
+    <li>Web Browser: A specific type of web client, like Chrome, Firefox, Safari, or Edge, that is designed
+        to request, retrieve, and display web content (HTML, images, videos, etc.) from web servers.
+    </li>
+
+    <li>In short, all web browsers are web clients, but not all web clients are web browsers.</li>
+</ul>
+
+<h2><em>Hello World</em></h2>
+<p><strong>What is the html head element?</strong></p>
+
+<p> &lt;head&gt; element in HTML contains meta-information about the webpage, such as the title,
+    character encoding, links to stylesheets, and scripts. It does not display content
+    on the page but provides essential data for the browser and search engines.
+</p>
+<ol>
+    <li>What does &lt;!DOCTYPE` html&gt; mean?
+        &lt;!DOCTYPE html&gt; is a declaration that tells the browser the document type and version of
+        HTML being used. In this case, &lt;!DOCTYPE html&gt; specifies that the page is written in
+        HTML5. It helps the browser render the page correctly by ensuring it follows the rules
+        and syntax of HTML5.
+    </li>
+    <li>What are the two top most elements within the html element?
+        The two topmost elements within the
+        &lt;html&gt element are:
+
+        &lthead&gt;: Contains meta-information about the document, like the title, links to
+        stylesheets, and scripts, but does not display content on the page.
+        &ltbody&gt;: Contains the actual content of the webpage that is displayed to the user, such
+        as text, images, and other media.
+    </li>
+    <li> 4. How to emphasize a text and how is it displayed in the browser?
+        To emphasize text in HTML, you can use the &lt;em&gt; tag. This tag typically displays the
+        text in italic in most browsers by default.
+        In the browser, the word "important" would appear in italics, indicating emphasis.
+    </li>
+    <li> 5. How to mark up important ext and how is it displayed in the browser?
+        To mark up important text in HTML, you can use the &lt;strong&gt; tag. This tag typically
+        displays the text in bold in most browsers by default.
+        In the browser, the phrase "very important" will appear in bold, indicating that it
+        carries strong emphasis or importance.
+    </li>
+</ol>
+
+</body>
+</html>

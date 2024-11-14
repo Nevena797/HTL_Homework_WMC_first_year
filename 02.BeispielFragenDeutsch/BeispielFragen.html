@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beispielfragen - Grundlegende Webtechniken</title>
+    <link rel="stylesheet" href="BeispielFragen.css">
+</head>
+<body>
+<h1>Beispielfragen – Grundlegende Webtechniken</h1>
+
+<h2>Allgemeines über das World Wide Web</h2>
+<h3><strong>Was sind die wichtigsten Technologien, die das World Wide Web so erfolgreich gemacht haben?</strong></h3>
+<ul>
+    <li>Hypertext-Übertragungsprotokoll (HTTP)</li>
+    <li>Einheitlicher Ressourcen-Locator (URL)</li>
+    <li>Hypertext-Markup-Sprache (HTML)</li>
+    <li>Webbrowser</li>
+    <li>Domain Name System (DNS)</li>
+    <li>Suchmaschinen</li>
+    <li>JavaScript</li>
+    <li>Cascading Style Sheets (CSS)</li>
+    <li>Webserver und Datenbanken</li>
+    <li>Secure Sockets Layer (SSL) und HTTPS</li>
+    <li>Content-Delivery-Netzwerke (CDNs)</li>
+    <li>Responsive Design und mobile Webtechnologien</li>
+    <li>APIs und Webservices (REST, SOAP)</li>
+    <li>Soziale Medien und nutzergenerierte Inhalte</li>
+</ul>
+<h3><strong>Wie werden Ressourcen (HTML-Seiten, Bilder usw.) im Web adressiert?</strong></h3>
+<ul>
+    <li>mithilfe von URLs (Uniform Resource Locators) adressiert</li>
+    <li>URLs bieten den Speicherort jeder Ressource</li>
+</ul>
+
+<h3><strong>Was sind die allgemeinen Bestandteile einer URL?</strong></h3>
+<ol>
+    <li><strong>Protokoll</strong>: Gibt die Kommunikationsmethode an, normalerweise http oder https.</li>
+    <li><strong>Domain</strong>: Die Adresse des Servers (z. B. example.com).</li>
+    <li><strong>Port (optional)</strong>: Der Port des Servers, standardmäßig 80 für http und 443 für https (z. B.
+        :8080).
+    </li>
+    <li><strong>Pfad</strong>: Der spezifische Speicherort der Ressource auf dem Server (z. B. /images/photo.jpg).</li>
+    <li><strong>Abfrage (optional)</strong>: Schlüssel-Wert-Paare für dynamische Inhalte, beginnend mit ? (z. B.
+        ?search=web).
+    </li>
+    <li><strong>Fragment (optional)</strong>: Ein Abschnitt innerhalb der Ressource, beginnend mit # (z. B. #section1).
+    </li>
+</ol>
+<h2>Webserver</h2>
+
+<h3><strong>Was ist ein Webserver?</strong></h3>
+<ul>
+    <li>Computersystem oder eine Software</li>
+    <li>Websites hostet</li>
+    <li>Webinhalte über das Internet an Nutzer liefert</li>
+    <li>empfängt Anfragen von Clients (wie Browsern)</li>
+    <li>verarbeitet sie und liefert die angeforderten Ressourcen über die HTTP- oder HTTPS-Protokolle</li>
+    <li>Apache, Nginx und Microsoft IIS</li>
+</ul>
+<h3><strong>Was macht ein Webserver?</strong></h3>
+<ul>
+    <li>speichert und liefert Websites</li>
+    <li>Nutzer ruft eine Website auf</li>
+    <li>sendet an den Browser des Nutzers</li>
+</ul>
+
+<h3><strong>Wie können Inhalte auf einem Webserver gespeichert werden?</strong></h3>
+<ul>
+    <li><strong>Statische Dateien:</strong> HTML, CSS, JavaScript, Bilder, Videos, Dokumente</li>
+    <li><strong>Datenbanken:</strong>
+        <ul>
+            <li>Dynamische Inhalte: Benutzerdaten, Produktinformationen und Beiträge</li>
+            <li>Der Webserver ruft diese Daten basierend auf Benutzeranfragen ab</li>
+            <li>generiert dynamisch Seiten</li>
+        </ul>
+    </li>
+    <li><strong>Content-Management-Systeme (CMS):</strong>
+        <ul>
+            <li>WordPress oder Drupal</li>
+            <li>speichern Inhalte in einer Datenbank</li>
+            <li>Veröffentlichung von Inhalten - benutzerfreundliche Oberfläche</li>
+        </ul>
+    </li>
+    <li><strong>Cloud-Speicher:</strong>
+        <ul>
+            <li>insbesondere große Dateien wie Medien</li>
+            <li>AWS S3</li>
+            <li>über URLs abgerufen werden</li>
+            <li>die Hauptlast des Webservers reduzieren</li>
+        </ul>
+    </li>
+</ul>
+<h3><strong>Wie wird Inhalt auf Webseiten beschrieben?</strong></h3>
+<ul>
+    <li><strong>HTML (HyperText Markup Language)</strong>
+        <ul>
+            <li>HTML strukturiert den Inhalt</li>
+            <li>definiert das Layout sowie die Bedeutung der Informationen</li>
+        </ul>
+    </li>
+    <li><strong>Elemente: Überschriften, Absätze, Bilder, Links, Listen</strong></li>
+    <li><strong>CSS (Cascading Style Sheets)</strong>
+        <ul>
+            <li>HTML-Elemente gestalten</li>
+            <li>formatieren</li>
+        </ul>
+    </li>
+    <li><strong>JavaScript</strong>
+        <ul>
+            <li>Interaktivität</li>
+            <li>dynamisches Verhalten</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Webclient</h2>
+<h3><strong>Was ist ein Webclient?</strong></h3>
+<ul>
+    <li>Software: Programm, das Webinhalte anzeigt</li>
+    <li>Kommunikationspartner: Stellt Anfragen an Webserver und empfängt Antworten</li>
+    <li>Schnittstelle für Nutzer: Ermöglicht das Anzeigen und Interagieren mit Websites</li>
+    <li>Unterstützt Protokolle: Nutzt Protokolle wie HTTP oder HTTPS zur Datenübertragung</li>
+</ul>
+
+<p><strong>Was macht ein Webclient?</strong></p>
+<ul>
+    <li>Anfragen senden: Fordert Inhalte von einem Webserver an (z. B. Websites).</li>
+    <li>Darstellen: Zeigt die Website für den Nutzer an</li>
+    <li>Interaktionen verarbeiten: Reagiert auf Klicks, Eingaben und andere Benutzeraktionen</li>
+    <li>Kommunikation verwalten: Tauscht Daten mit Servern für dynamische Inhalte</li>
+</ul>
+
+<p><strong>Sind Webclient und Webbrowser dasselbe?</strong></p>
+<p>Sie sind nicht genau dasselbe:</p>
+<ol>
+    <li><strong>Webclient:</strong>
+        <ul>
+            <li>kann ein Webbrowser sein</li>
+            <li>ist jede Software oder jedes Gerät, das mit einem Webserver interagiert</li>
+            <li>andere Anwendungen (z. B. mobile Apps oder Kommandozeilentools)</li>
+            <li>Beispiele: Discord, Teams</li>
+        </ul>
+    </li>
+    <li><strong>Webbrowser:</strong>
+        <ul>
+            <li>eine spezifische Art von Webclient</li>
+            <li>Beispiele: Chrome, Firefox, Safari, Edge</li>
+            <li>Webinhalte anfordern, abrufen und darstellen</li>
+        </ul>
+    </li>
+</ol>
+
+<h2><em>Hallo Welt</em></h2>
+<h3><strong>Was ist das HTML-Head-Element?</strong></h3>
+<ul>
+    <li>Das &lt;head&gt;-Element in HTML</li>
+    <li>enthält Meta-Informationen über die Webseite</li>
+    <li>Beispiele: Titel, Zeichenkodierung, Links zu Stylesheets und Skripten</li>
+    <li>zeigt keinen Inhalt auf der Seite an, liefert aber wichtige Daten für den Browser und Suchmaschinen</li>
+</ul>
+
+<h3><strong>Was bedeutet &lt;!DOCTYPE html&gt;?</strong></h3>
+<ul>
+    <li>eine Deklaration des Dokumenttyps</li>
+    <li>hilft dem Browser, die Seite korrekt darzustellen</li>
+    <li>sicherstellt, dass er den Regeln und der Syntax von HTML folgt</li>
+</ul>
+
+<h3><strong>Was sind die beiden obersten Elemente innerhalb des HTML-Elements?</strong></h3>
+<p>Die beiden obersten Elemente innerhalb des &lt;html&gt;-Elements sind:</p>
+<ul>
+    <li>&lt;head&gt; – Enthält Metadaten wie Titel, Skripte, Stylesheets.</li>
+    <li>&lt;body&gt; – Enthält den sichtbaren Inhalt der Webseite.</li>
+</ul>
+
+<h3><strong>Wie betont man Text und wie wird er im Browser angezeigt?</strong></h3>
+<ul>
+    <li>Das &lt;em&gt;-Tag</li>
+    <li>stellt den Text in den meisten Browsern standardmäßig kursiv dar</li>
+</ul>
+
+<h3><strong>Wie markiert man wichtigen Text und wie wird er im Browser angezeigt?</strong></h3>
+<ul>
+    <li>Das &lt;strong&gt;</li>
+    <li>zeigt den Text standardmäßig fett an</li>
+</ul>
+
+</body>
+</html>

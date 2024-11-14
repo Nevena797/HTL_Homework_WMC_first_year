@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grundlegende Webtechniken</title>
+    <link rel="stylesheet" href="CheatSheetDeutsch.css">
+</head>
+<body>
+<main>
+<h1>Grundlegende Webtechniken</h1>
+<h2>Verständnis des Aufbaus einer URL</h2>
+<h3>Schema, Server und Seite</h3>
+<ul>
+    <li><strong>Schema</strong>: Das Protokoll, das verwendet wird, um eine Ressource im Internet zuzugreifen, z.B.
+        http, https.
+    </li>
+    <li><strong>URL (Uniform Resource Locator)</strong>: Die Adresse, die verwendet wird, um eine Ressource auf einem
+        Webserver
+        zuzugreifen. Sie enthält das Schema, den Domainnamen, den Pfad und manchmal eine Abfrage oder ein Fragment.
+    </li>
+    <li><strong>Server</strong>: Ein Computer oder System, das eine Website oder Webanwendung hostet und die Dateien
+        oder Inhalte den
+        Nutzern über das Internet bereitstellt.
+    </li>
+    <li><strong>Seite</strong>: Eine spezifische Datei oder ein Dokument auf der Website, das oft in HTML geschrieben
+        ist und das ein
+        Nutzer über eine URL aufruft. Die Seite ist Teil des Webinhalts, der auf dem Server gehostet wird.
+    </li>
+</ul>
+<ul>
+    <li><strong>Webbrowser</strong>: Software, die es Nutzern ermöglicht, auf Inhalte im Internet zuzugreifen, diese
+        abzurufen und
+        anzuzeigen, wie zum Beispiel Webseiten, Bilder und Videos, index sie HTML und andere Webtechnologien
+        interpretiert.
+    </li>
+    <li><strong>Webserver</strong>: Ein Computersystem, das Websites hostet und Webinhalte an die Browser der Nutzer
+        über das Internet
+        liefert, wenn diese sie anfordern, über die HTTP- oder HTTPS-Protokolle.
+    </li>
+</ul>
+<h2>Geschichte des World Wide Web</h2>
+<article>
+    <ul>
+        <li>Tim Berners-Lee</li>
+        <li>Das Problem der Speicherung, Aktualisierung und des Findens von Dokumenten und Datenfiles</li>
+        <li>Die gängige Baumstruktur</li>
+        <li>Das Markieren von Dateien mit Schlüsselwörtern</li>
+        <li>Hyperlinks, die mit "Hot Spots" verbunden sind</li>
+        <li>Unterstützung von Verbindungen zwischen mehreren Datenbanken auf unabhängigen Computern</li>
+        <li>andere Medien neben Text, wie Grafiken, Sprache und Video</li>
+        <li>"Gateways" - Zugriff auf Dateisysteme</li>
+        <li>Dezentralisiert, ohne zentrale Kontrolle</li>
+    </ul>
+</article>
+
+
+<ul>
+    <li>
+        Ende 1990
+    </li>
+    <li>einschließlich eines Browsers namens WorldWideWeb und eines HTTP-Servers</li>
+    <li>Das HTTP-Protokoll</li>
+    <li> die grundlegende URL-Syntax und implizit machte HTML zum primären Dokumentformat</li>
+
+    <li>Marc Andreessen und Jim Clark gründeten 1994 den Netscape Navigator Browser</li>
+    <li>führten Java und JavaScript ins Web ein</li>
+    <li>Microsofts eigener Browser, Internet Explorer, und die "Browserkriege".</li>
+    <li>World Wide Web Consortium (W3C) - ist die wichtigste internationale Standardisierungsorganisation für das
+        World Wide Web
+    </li>
+    <li>Gegründet 1994 und geleitet von Tim Berners-Lee.</li>
+</ul>
+<ul>
+    <li>Ein Uniform Resource Locator (URL)</li>
+    <li>Adresse im Web</li>
+    <li>Die meisten Webbrowser zeigen die URL einer Webseite an</li>
+    <li>Frühe WorldWideWeb-Mitarbeiter, einschließlich Berners-Lee, schlugen ursprünglich die Verwendung von UDIs
+        (Universal Document Identifiers) vor
+    </li>
+</ul>
+
+<h2>Syntax</h2>
+
+<p>Jede HTTP-URL entspricht der Syntax eines generischen URI.</p>
+<ul>
+    <li>URI = Schema ":" ["//" Autorität] Pfad ["?" Abfrage] ["#" Fragment]</li>
+    <li>Schema: nicht groß-/kleinschreibungsempfindlich, z.B. http, https...</li>
+    <li>Autorität - eine optionale Benutzerinfo, eine Host-Komponente (einschließlich, aber nicht beschränkt auf
+        einen
+        Hostnamen) oder eine IP-Adresse.
+    </li>
+    <li>Ein optionaler Port</li>
+    <li>Eine Pfad-Komponente</li>
+    <li>Nach Konvention wird in http- und https-URIs der letzte Teil eines Pfads als pathinfo bezeichnet und ist
+        optional.
+    </li>
+    <li>Eine optionale Abfrage - Abfragezeichenfolge für nicht-hierarchische Daten</li>
+    <li>Eine optionale Fragmentkomponente, die durch ein Hash-Zeichen (#) eingeleitet wird</li>
+</ul>
+
+<h2>Webserver</h2>
+<p>Ein Webserver ist eine Computersoftware und die zugrunde liegende Hardware.</p>
+<ul>
+    <li>Akzeptiert Anfragen über HTTP/HTTPS</li>
+    <li>Der Server antwortet mit Inhalten oder einer Fehlermeldung</li>
+    <li>Speichert Ressourcen</li>
+    <li>Am unteren Ende: Eingebettete Systeme, wie z.B. ein Router, der einen kleinen Webserver als
+        Konfigurationsschnittstelle betreibt
+    </li>
+    <li>Eine Ressource, die von einem Webserver gesendet wird, kann eine Datei sein (statischer Inhalt) oder
+        dynamischer Inhalt
+    </li>
+</ul>
+<h2>Web-Client</h2> <h3>Webbrowser</h3>
+<p> Anwendung zum Aufrufen von Websites</p>
+<ul>
+    <li>Der Nutzer fordert eine Webseite an, der Browser ruft die Dateien vom Webserver ab und zeigt die Seite auf
+        dem
+        Bildschirm des Nutzers an.
+    </li>
+    <li>Auf Desktop-Computern, Laptops, Tablets und Smartphones verfügbar.</li>
+    <li>Webbrowser ≠ Suchmaschine</li>
+</ul>
+<h4>Funktion</h4>
+<ul>
+    <li>Inhalte abrufen und auf dem Gerät des Nutzers anzeigen</li>
+    <li>Uniform Resource Locator (URL)</li>
+    <li>Werden mit dem Hypertext Transfer Protocol (HTTP) abgerufen. Im sicheren Modus (HTTPS)</li>
+    <li>ist die Verbindung verschlüsselt</li>
+    <li>Verwendet einen internen Cache für Webseiten-Ressourcen</li>
+    <li>Cookies, die vom Browser gespeichert werden – enthalten Anmeldedaten und verfolgen das Nutzerverhalten</li>
+    <li>Feinere Verwaltungsoptionen</li>
+</ul>
+<h4>&lt;!DOCTYPE&gt;</h4>
+
+    Die Deklaration ist kein HTML-Tag.
+<h4>&lt;body&gt;</h4>
+<p>Das &lt;body&gt;-Tag definiert den Hauptinhalt des Dokuments.
+    Es unterstützt auch die globalen Attribute in HTML.
+</p>
+<h4>&lt;em&gt;</h4>
+<p>Wird kursiv dargestellt.</p>
+<h4>&lt;head&gt;</h4>
+<p>Metadaten – werden nicht angezeigt – enthält Titel, Zeichensatz, Stile, Skripte</p>
+<p>Standardwert: display none</p>
+<h4>&lt;html&gt;</h4>
+<p>repräsentiert die Wurzel eines HTML-Dokuments</p>
+<p> Container für alle anderen HTML-Elemente </p>
+<p>Standarddarstellung: block; Fokusumrandung: none</p>
+<h4>&lt;strong&gt;</h4>
+<p> Text mit starker Bedeutung – fett</p>
+<p>Schriftstärke: fett;</p>
+<p>&lt;b&gt; keine zusätzliche Bedeutung!</p>
+<h4>&lt;title&gt;</h4>
+<p>Der Titel des Dokuments, nur Text, wird in der Titelleiste oder im Tab der Seite angezeigt</p>
+<p>wichtig für die Suchmaschinenoptimierung</p>
+<p>Standarddarstellung: none</p>
+    </main>
+</body>
+</html>
