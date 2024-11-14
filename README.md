@@ -1,2 +1,2 @@
-# HTL-Homework
+# HTL-Homework-Web Technologie
 HTL / CSS exercise
