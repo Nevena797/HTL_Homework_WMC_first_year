@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Web Techniques</title>
+    <link rel="stylesheet" href="04.AssigmentListsAndTables.css">
+</head>
+<body>
+<h1>Basic Web Techniques</h1>
+<h2>Assignment 3 - Lists and Tables</h2>
+<h3>Objective</h3>
+<p>This week's reading assignment is to get you into lists and tables.</p>
+<h3>Materials</h3>
+<p>Review the handouts of the last lecture (what is basically a summary of the presentation shown) and check the
+    following tutorials at [w3schools.com](https://www.w3schools.com):</p>
+
+<h3>Html for Lists</h3>
+<p>unordered, ordered, description lists </p>
+<ul>
+    <li>list-style-type - disc, circle, square, none</li>
+    <li>list-style-image - url("bling.jpg")</li>
+    <li>list-style-position:outside; inside; initial; inherit</li>
+    <li>list-style:list-style-type (default-disc); list-style-position (d"outside"), list-style-image (d"none")</li>
+    <li>Remove Default Settings:ul {list-style-type: none; margin: 0; padding: 0; }</li>
+</ul>
+<ol>
+    <li>ordered HTML list - with numbers by default - list-style-type - decimal, lower-alpha, upper-alpha,lower-roman,
+        upper-roman
+    </li>
+    <li>list also has default margin and padding-to remove this, add margin:0 and padding:0</li>
+    <li>ol start="50", reversed, start-the start value, type - marker to use</li>
+    <li>style="line-height:80%"</li>
+
+</ol>
+<dl>HTML Description Lists
+    <dt>&lt;dt&gt; (defines terms/names)</dt>
+    <dd>&lt;dd&gt; (describes each term/name)</dd>
+</dl>
+
+<h3>Nested HTML Lists</h3>
+<p>a list item &lt;li&gt;can contain a new list, and other HTML elements, like images and links</p>
+<p>float:left to display a list horizontally</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Tag</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>&lt;ul&gt;</td>
+        <td>Defines an unordered list</td>
+    </tr>
+    <tr>
+        <td>&lt;ol&gt;</td>
+        <td>Defines an ordered list</td>
+    </tr>
+    <tr>
+        <td>&lt;li&gt;</td>
+        <td>Defines a list item</td>
+    </tr>
+    <tr>
+        <td>&lt;dl&gt;</td>
+        <td>Defines a description list</td>
+    </tr>
+    <tr>
+        <td>&lt;dt&gt;</td>
+        <td>Defines a term in a description list</td>
+    </tr>
+    <tr>
+        <td>&lt;dd&gt;</td>
+        <td>Describes the term in a description list</td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Css for lists</h3>
+<ul>
+    <li>values for unordered Lists - list-style-type: disk, circle; square; none</li>
+    <li>values for ordered Lists - list-style-type:decimal,lower-alpha, upper-alpha, lower-roman, upper-roman</li>
+    <li>list-style-image: url('sqpurple.gif')</li>
+    <li>list-style-position - outside, inside;</li>
+    <li>Remove Default Settings - ul {list-style-type: none; margin: 0; padding: 0; }</li>
+    <li>list-style-shorthand: list-style-type; list-style-position; list-style-image</li>
+    <li>Add background colors to lists and list items</li>
+    <li>ul {list-style: square inside url("sqpurple.gif");}</li>
+</ul>
+
+<h3>Htmls for Tables</h3>
+<p>Table Elements: &lt;table&gt;,&lt;thead&gt;, &lt;tr&gt;,&lt;th&gt;(Table Header), colspan,&lt;tbody&gt;:&lt;tr&gt;(table
+    row), &lt;td&gt;(table data), &lt;tfoot&gt;: &lt;tr&gt;(table row), colapsan </p>
+<p>table cell - td - text, images, lists, links, other tables </p>
+<p>table row - tr </p>
+<p>table header - th - centered </p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Tag</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+
+        <td>&lt;table&gt;</td>
+        <td>Defines a table</td>
+    </tr>
+    <tr>
+
+        <td>&lt;th&gt;</td>
+        <td>Defines a header cell in a table</td>
+    </tr>
+    <tr>
+
+        <td>&lt;tr&gt;</td>
+        <td>Defines a row in a table</td>
+    </tr>
+    <tr>
+
+        <td>&lt;td&gt;</td>
+        <td>Defines a cell in a table</td>
+    </tr>
+    <tr>
+        <td>&lt;caption&gt;</td>
+        <td>Defines a table caption</td>
+    </tr>
+    <tr>
+        <td>&lt;col&gt;</td>
+        <td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+    </tr>
+    <tr>
+        <td>&lt;colgroup&gt;</td>
+        <td>Specifies a group of one or more columns in a table for formatting</td>
+    </tr>
+    <tr>
+        <td>&lt;thead&gt;</td>
+        <td>Groups the header content in a table</td>
+    </tr>
+    <tr>
+        <td>&lt;tbody&gt;</td>
+        <td>Groups the body content in a table</td>
+    </tr>
+    <tr>
+        <td>&lt;tfoot&gt;</td>
+        <td>Groups the footer content in a table</td>
+    </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+<p>HTML Table - Cells that Span Many Columns</p>
+<p>table, th, td { border: 1px solid black; border-collapse: collapse;</p>
+<p>style="float:right"</p>
+<p>table.center { margin-left: auto; margin-right: auto; }</p>
+<p>table style="background-color:#00FF00"</p>
+<p>th, td { padding: 10px;}</p>
+<p>style="width:400px"</p>
+<p>&lt;caption&gt;Monthly savings&lt;/caption&gt;</p>
+<ul>
+    <li>Cells that Span Many Columns --th colspan="2"; tr colspan="3";</li>
+    <li>d: table { display: table; border-collapse: separate; border-spacing: 2px; border-color: gray;}</li>
+</ul>
+<p>Table Borders</p>
+<ul>
+    <li>border: 1px solid black;</li>
+    <li>border-collapse: collapse;</li>
+    <li>background-color: #96D4D4;</li>
+    <li>border-radius - border-radius: 10px;</li>
+    <li>border-style -dotted, dashed, solid,double,groove,ridge,inset,outset,none,hidden</li>
+    <li>border-color - #96D4D4</li>
+</ul>
+<h3>Table size</h3>
+<ul>
+    <li>table style="width:100%" - compared to its parent element - body</li>
+    <li>th style="width:70%"</li>
+    <li>HTML Table Row Height -</li>
+    <li>table style="width:100%,tr style="height:200px"</li>
+</ul>
+<h3>Table Headers</h3>
+<ul>
+    <li>th - table cell</li>
+    <li>Vertical Table Headers - the first cell in each row as a th</li>
+    <li>Align Table Headers - text-align -</li>
+    <li>Header for Multiple Columns-th colspan="2"</li>
+    <li>Caption inserted immediately after the table</li>
+</ul>
+<h3>HTML Table Padding & Spacing</h3>
+<ul>
+    <li>padding inside the cells</li>
+    <li>th, td { padding: 15px; }</li>
+    <li>padding-top,padding-bottom, padding-left,padding-right</li>
+</ul>
+<ol>
+    <li>Cell Spacing</li>
+    <li>space between each cell</li>
+    <li>border-spacing: 30px;</li>
+</ol>
+<h3>Colspan & Rowspan</h3>
+<p>th colspan="2" represents the number of columns</p>
+<p>th rowspan="2" represents the number of rows to span</p>
+<h3>Table Styling</h3>
+<ul>
+    <li>Zebra -tr:nth-child(even) {background-color: #D6EEEE;}</li>
+    <li>Vertical Zebra - td:nth-child(even), th:nth-child(even) {
+        background-color: #D6EEEE; }
+    </li>
+    <li>tr:nth-child(even){background-color: rgba(150, 212, 212, 0.4);}
+        th:nth-child(even),td:nth-child(even) {background-color: rgba(150, 212, 212, 0.4); }
+    </li>
+</ul>
+<p>Table Colgroup - colgroup col span="2" style="background-color: #D6EEEE"</p>
+<p>Legal CSS Properties width property, visibility property ,background properties , border properties</p>
+
+<h3>Css for Tables</h3>
+<ul>
+    <li>border - table, th, td {border: 1px solid;}</li>
+    <li>table{width: 100%;}</li>
+    <li>th and td elements have separate borders</li>
+    <li>table{border-collapse: collapse;}</li>
+    <li>only want a border around the table -table { border: 1px solid;}</li>
+</ul>
+<ol>
+
+    <li>Width and Height</li>
+    <li>table{width: 100%;} th {height: 70px;}</li>
+    <li>CSS Table Alignment - text-align - horizontal alignment- left; right</li>
+    <li>vertical-align: top, bottom, or middle</li>
+    <li>Horizontal Dividers - th, td {border-bottom: 1px solid #ddd; }</li>
+    <li>tr:hover {background-color: coral;}</li>
+    <li>Striped Tables tr:nth-child(even) {background-color: #f2f2f2;}</li>
+    <li>Responsive Tabl - div style="overflow-x:auto;</li>
+    <li>border-style p.mix {border-style: dotted dashed solid double;}</li>
+</ol>
+<p>Border Width - px, pt, cm, em; three pre-defined values: thin, medium, or thick</p>
+<p>top border, right border, bottom border, and the left border</p>
+<p>border-color - name, HEX "#ff0000", "rgb(255,0,0)", "hsl(0, 100%, 50%)" </p>
+<p>border-color is not set, it inherits the color of the element</p>
+<ul>
+    <li>Individual Sides</li>
+    <li>border-top-style:</li>
+    <li>border-right-style:</li>
+    <li>border-bottom-style:</li>
+    <li>border-left-style:</li>
+</ul>
+<p>Shorthand Border Property border: border-width, border-style(required), border-color </p>
+<ul>
+    <li>p {border-left: 6px solid red; }</li>
+    <li>p { border-bottom: 6px solid red; }</li>
+</ul>
+<p>Rounded Borders</p>
+<ul>
+    <li>border-radius - p.round3 { border: 2px solid red; border-radius: 12px; padding: 5px; }</li>
+</ul>
+<ul>border:border-width,border-style,border-color, d: initial,inherit;</ul>
+
+
+</body>
+</html>
