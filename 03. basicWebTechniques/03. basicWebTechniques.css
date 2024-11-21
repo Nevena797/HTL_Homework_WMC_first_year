@@ -1,0 +1,33 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: "Arial", "Verdana", "Tahoma", "Trebuchet MS", sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 60px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Times New Roman", "Georgia", "Garamond", serif;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Times New Roman", "Georgia", "Garamond", serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
+
+ul {
+    list-style: disc;
+}
+

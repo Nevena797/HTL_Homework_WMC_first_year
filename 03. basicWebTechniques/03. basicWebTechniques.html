@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Web Techniques</title>
+    <link rel="stylesheet" href="03.%20basicWebTechniques.css">
+</head>
+<body>
+<h1>HTML</h1>
+
+<p>void elements - do not have a end tag</p>
+<span>&lt;br&gt; tag defines a line break</span>
+<p>
+<ul>
+    <li>
+        Attributes provide additional information about elements - name="value" pairs
+    </li>
+    <li>Absolute URL and Relative URL</li>
+</ul>
+<p>&lt;hr&gt; tag defines a thematic break -no end tag</p>
+<p>&lt;br&gt; if you want a line break (a new line) without starting a new paragraph</p>
+<p>&lt;pre&gt; preformatted text</p>
+<p>target attribute specifies where to open the linked document</p>
+<ul>
+    <li>_self - same window</li>
+    <li>_blank -a new window or tab</li>
+    <li>_parent - parent frame</li>
+    <li>_top-full body of the window</li>
+</ul>
+<p> absolute URL-a full web address -
+    a local link (a link to a page within the same website) is specified with a relative URL (without the "https://www"
+    part)</p>
+<h2>Images</h2>
+<p>Images in Another Folder - folder name in the src; Another Server -must specify an absolute (full) URL in the src
+    attribute </p>
+<p>float property - float to the right or to the left of a text</p>
+
+<h2>CSS</h2>
+<p>
+    Simple selectors, Combinator selectors, Pseudo-class selectors, Pseudo-elements selectors, Attribute selectors</p>
+<ul>
+    <li>id - hash (#) character, followed by the id of the element; name cannot start with a number</li>
+    <li>period (.) character, followed by the class name</li>
+    <li>can refer to more than one class &lt;p&gt; element will be styled according to class="center" and to
+        class="large":
+    </li>
+    <li>&lt;p class="center large"&gt;This paragraph refers to two classes.&lt;/p&gt;</li>
+    <li>The CSS Grouping Selector - the same style definitions, group selectors whit ","</li>
+    <li>The element Selector</li>
+    <li>Correct (no space): margin-left: 20px;</li>
+</ul>
+<h3>Colors</h3>
+<ol>
+    <li>140 color names, Color Names:</li>
+    <li>RGB values -RED, GREEN and BLUE rgb(red, green, blue) -highest value (255)</li>
+    <li>RGBA values - the opacity for a color -rgba(red, green, blue, alpha), 0.0 (fully transparent), 1.0 (not
+        transparent at all)
+    </li>
+    <li>HEX values - #RRGGBB -black - #000000;white #ffffff 09..0a..0f..11..</li>
+    <li> 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each component</li>
+    <li>HSL values hsl(hue, saturation, lightness)</li>
+    <li>HSLA values -hsla(hue, saturation, lightness, alpha) 0.0 (fully transparent) and 1.0 (not transparent at all)
+    </li>
+</ol>
+<br>
+<h3>Backgrounds</h3>
+<ul>
+    <li>background-color - color of an element</li>
+    <li>opacity , div {opacity: 0.3} -transparency - text + background</li>
+    <li>div { background: rgba(0, 128, 0, 0.3} -background only</li>
+    <li>background-image - covers the entire element</li>
+    <li>background-repeat - repeats an image both horizontally and vertically</li>
+    <li>background-repeat: repeat-x - horizontally; background-repeat: repeat-y; -vertically</li>
+    <li>only once - background-repeat: no-repeat</li>
+    <li>background-attachment - the background image should scroll or be fixed - : fixed/scroll</li>
+    <li>background-position:right top</li>
+    <li>background (shorthand) - all the background properties</li>
+    <li>body { background: #ffffff url("img_tree.png") no-repeat right top; }</li>
+    <li>order:color,image, repeat, attachment,position</li>
+    <li>background-clip -defines how far the background (color or image) should extend within an element</li>
+    <li>background-origin origin position of a background image</li>
+</ul>
+<br>
+<h3>Text</h3>
+<ul>
+    <li>text-align - horizontal alignment - center, left, right, justify</li>
+    <li>text-align-last- the last line of a text - right, center, justify</li>
+    <li>text direction -p { direction: rtl; unicode-bidi: bidi-override;- overridden }</li>
+    <li>vertical-align: baseline, text-top,text-bottom, sub, super</li>
+</ul>
+<h3>Text Decoration</h3>
+<ul>
+    <li>text-decoration-line: overline; line-through; underline; overline underline;</li>
+    <li>text-decoration-color: the color of the decoration line</li>
+    <li>text-decoration-style: solid, double, dotted, dashed, wavy</li>
+    <li>text-decoration-thickness: auto, 5px, 25%</li>
+    <li>order:line, color, style, thickness p { text-decoration: underline red double 5px; }</li>
+    <li>text-decoration: none - remove underline</li>
+</ul>
+<h3>Text Transformation</h3>
+<p>text-transform: uppercase; lowercase; capitalize; </p>
+<ul>
+    <li>text-indent - the indentation of the first line</li>
+    <li>letter-spacing - space between the characters</li>
+    <li>line-height - space between lines</li>
+    <li>word-spacing - the space between the words</li>
+    <li>white-space - nowrap - how white-space inside an element is handled</li>
+    <li>text-shadow: horizontal shadow (2px) and the vertical shadow (2px)</li>
+</ul>
+<h3>Fonts</h3>
+<p>generic font families: Serif, Sans-serif, Monospace, Cursive, Fantasy </p>
+<p>sans-serif fonts are considered easier to read than serif fonts</p>
+<p>fallback fonts:</p>
+<ul>
+    <li>Arial (sans-serif);Verdana (sans-serif); Tahoma (sans-serif); Trebuchet MS (sans-serif);</li>
+    <li>Times New Roman (serif), Georgia (serif), Garamond (serif)</li>
+    <li>Courier New (monospace), Brush Script MT (cursive)</li>
+    <li>Google Fonts-To use multiple Google fonts, just separate the font names with a pipe character (|)</li>
+</ul>
+<p>font-style:</p>
+<ul>
+    <li>normal, italic, oblique</li>
+    <li>font-weight: normal; bold;</li>
+    <li>font-variant: normal; small-caps;</li>
+</ul>
+<p>Font Style - an absolute - specified size, or relative size - allows a user to change the text size in browsers</p>
+<p>default size: 16px (16px=1em)</p>
+<p>pixels/16=em</p>
+<p>Combination of Percent and Em</p>
+<p>viewport width-the text size will follow the size of the browser window-1vw = 1% of viewport width</p>
+<p>Font Superfamilies</p>
+<p>Font Property</p>
+<p>shorthand - font</p>
+<p>font-style; font-variant; font-weight; font-size/line-height; font-family </p>
+<h3>Styling Links - pseudo selectors for links</h3>
+<ul>
+    <li>a:link - a normal, unvisited link</li>
+    <li>a:visited - a link the user has visited</li>
+    <li>a:hover - a link when the user mouses over it</li>
+    <li>a:active - a link the moment it is clicked</li>
+    <li>a:hover MUST come after a:link and a:visited</li>
+    <li>a:active MUST come after a:hover</li>
+    <li>text-decoration:none,underline</li>
+    <li>background-color</li>
+    <li>boxes/buttons: display: inline-block;</li>
+</ul>
+<h3>Combinators</h3>
+<ol>
+
+    <li>Descendant combinator (space) - all &lt;p&gt; elements inside &lt;div&gt; elements</li>
+    <li>Child combinator (>)</li>
+    <li>Next sibling combinator (+) - element that is directly after another specific element</li>
+    <li>Subsequent-sibling combinator (~) - next siblings of a specified element</li>
+</ol>
+<h3>Pseudo Classes</h3>
+<p>used to define a special state of an element, syntax selector:pseudo-class { property: value; }</p>
+<p>a:hover MUST come after a:link and a:visited; a:active MUST come after a:hover </p>
+<p>Pseudo-classes can be combined with HTML classes</p>
+<ul>
+    <li>:hover pseudo-class on a &lt;div&gt; element</li>
+    <li>a &lt;div&gt; element to show a &lt;p&gt; element (like a tooltip)
+        p { display: none; background-color: yellow; padding: 20px; }
+        div:hover p { display: block; }
+    </li>
+    <li>:first-child pseudo-class - first child of another element p:first-child { color: blue; }</li>
+    <li>first i element in all p p i:first-child {color: blue; }</li>
+    <li>:lang pseudo-class q:lang(no) {quotes: "~" "~"; }</li>
+    <li>input:focus {background-color: yellow; }</li>
+</ul>
+</body>
+</html>
