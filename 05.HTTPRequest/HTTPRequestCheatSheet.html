@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTPRequestCheatSheet</title>
+    <link rel="stylesheet" href="HTTPRequestCheatSheet.css">
+</head>
+<body>
+<h1>HTTP (Hypertext Transfer Protocol)</h1>
+<p>the transfer of data over the internet - Postman</p>
+<h2>Introduction to HTTP</h2>
+<ul>
+    <li>the delivery system for information on the internet</li>
+    <li>the foundation of the World Wide Web</li>
+    <li>way for web browsers and servers to talk to each other</li>
+
+</ul>
+<h2>HTTP Request - Response Cycle</h2>
+<p> a concept, web browser, a mobile app</p>
+<ol>
+    <li>client -> an HTTP request message</li>
+    <li>server receives, processes it, generate a response message</li>
+    <li>the server -> response message back to the client</li>
+    <li>client receives the response message, processes it</li>
+    <li>client may repeating the cycle as needed</li>
+</ol>
+<section>
+    <h2>How to Create HTTP Requests</h2>
+    <p>
+        How to Create HTTP Requests</p>
+    <ul>
+        <li>URL</li>
+        <li>the HTTP method</li>
+        <li>a list of headers</li>
+        <li>the request body</li>
+    </ul>
+
+    <p>an HTTP request header</p>
+    <ul>
+        <li>GET /watch?v=8PoQpnlBXD0 HTTP/1.1</li>
+        <li>Host: www.youtube.com</li>
+        <li>Cookie: GPS=1; VISITOR_INFO1_LIVE=kOe2UTUyPmw; YSC=Jt6s9YVWMd4</li>
+    </ul>
+</section>
+
+<section>
+    <h2>What is an HTTP Request URL</h2>
+    <ul>
+    <li>URI/URL</li>
+    <li>URI</li>
+    <li>URN</li>
+    <li>scheme -> host -> path -> query</li>
+    </ul>
+</section>
+
+<section><h2>HTTP Request Methods</h2>
+    <ul>
+        <li>HEAD - asks the server for status</li>
+        <li>GET - asks the server to retrieve a resource</li>
+        <li>POST - asks the server to create a new resource</li>
+        <li>PUT - asks the server to edit/update an existing resource</li>
+        <li>DELETE - asks the server to delete a resource</li>
+    </ul>
+
+</section>
+
+<section>
+    <h2>HTTP Request Headers - name/value format</h2>
+
+    <ul>
+        <li>GET /api/data HTTP/1.1</li>
+        <li>Host: example.com -> specifies the hostname of the server</li>
+        <li>User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+            (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36
+            -> the client that is making the request
+        </li>
+        <li>Accept: application/json -> MIME types of data that the client is willing to accept</li>
+        <li>Accept-Language: en-US,en;q=0. -> the preferred language(s) for the response</li>
+        <li>Authorization: Token abc123 -> access token for authentication</li>
+        <li>Cache-Control: no-cache -> caching directives for both requests and responses</li>
+        <li>Connection: keep-alive -> options for the connection handling between client and server</li>
+        <li>Referer: https://www.google.com/ - > specifies the URL of the page that linked to the current page</li>
+        <li>Pragma: no-cache -> specifies implementation-specific directives that might apply to any agent along the
+            request-response chain
+        </li>
+        <li>Content-Type -> This header specifies the MIME type of the data that is being sent in the body of the
+            request, but it is not used in this example because this is a GET request without a request body.
+        </li>
+    </ul>
+
+
+</section>
+
+<section>
+    <h2>HTTP Request Body</h2>
+
+    <ul>
+        <li>POST /v1/images/upload HTTP/1.1</li>
+        <li>Host: api.thecatapi.com -> the hostname of the server</li>
+        <li>x-api-key: API_KEY -> API key for authentication</li>
+        <li>Content-Length: 232 -> the length of the request body in bytes</li>
+        <li>Content-Type: image/jpeg -> uploading an image file named</li>
+    </ul>
+
+    <ol>
+        <li>the server receives this request</li>
+        <li>parse the request body</li>
+        <li>use it to create a new entry in the Cat API database</li>
+        <li>the server will then return a response</li>
+        <li>image URL and the database ID</li>
+    </ol>
+
+
+</section>
+
+
+<section>
+    <h2>HTTP Response</h2>
+    <p>the message that a server sends back to a client</p>
+    <ul>
+        <li>HTTP/1.1 200 OK</li>
+        <li>Date: Sun, 28 Mar 2023 10:15:00 GMT</li>
+        <li>Content-Type: application/json</li>
+        <li>Server: Apache/2.4.39 (Unix) OpenSSL/1.1.1c PHP/7.3.6</li>
+        <li>Content-Length: 1024</li>
+
+        <li>{
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "age": 30,
+            "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+            }
+            }
+        </li>
+    </ul>
+
+    <ol>
+        <li>100 -> Continue</li>
+        <li>101 -> Switching Protocols</li>
+        <li>200 -> OK</li>
+        <li>201 -> Created</li>
+        <li>202 -> Accepted</li>
+        <li>203 -> Non-Authoritative Information</li>
+        <li>404 -> not found on the server</li>
+        <li>500 -> Internal Server Error</li>
+        <li>301 -> resource has been permanently moved to a new URL</li>
+    </ol>
+
+</section>
+
+<section>
+    <ol>
+        <li>"id": "ErDd1JRRT" -> unique identifier</li>
+        <li>"url": "https://cdn2.thecatapi.com/images/ErDd1JRRT.jpg" -> he URL where the image can be accessed</li>
+        <li>"width": 4282 -> width in pixels</li>
+        <li>"height": 6424 -> the height in pixels</li>
+        <li>"original_filename": "cat1.jpg" -> the original name of the file</li>
+        <li>"pending": 0 -> a flag - still being processed by the API</li>
+        <li>"approved": 1 - > a flag - has been approved for public use by the API</li>
+
+    </ol>
+</section>
+
+</body>
+</html>
