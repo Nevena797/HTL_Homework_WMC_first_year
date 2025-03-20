@@ -1,0 +1,10 @@
+{
+  "todos": [
+{ "id": 1, "title": "Einkaufen gehen", "completed": false },
+{ "id": 2, "title": "Müll rausbringen", "completed": true }
+],
+"users": [
+{ "id": 1, "name": "Anna" },
+{ "id": 2, "name": "Max" }
+]
+}

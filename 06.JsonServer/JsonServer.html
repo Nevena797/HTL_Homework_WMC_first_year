@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JsonServer</title>
+    <link rel="stylesheet" href="JsonServer.css">
+</head>
+<body>
+
+<h1>installation von Node.js, json-server, index.html, GET-Request an den json-serve
+</h1>
+
+<h2>installation von Node.js</h2>
+
+<ol>
+    <li>überprüfen, ob Node.js bereits installiert ist</li>
+    <li>öffne ein Terminal</li>
+    <li>windows: „Eingabeaufforderung“ /„PowerShell“</li>
+    <li>macOS: „Terminal“</li>
+    <li>linux: je nach Distribution</li>
+    <li>gib folgenden Befehl ein: <b>node -v</b></li>
+    <li>erscheint eine Versionsnummer - ist Node.js bereits installiert</li>
+    <li>andernfalls fahre mit den nächsten Schritten fort.</li>
+</ol>
+<h2>installation von Node.js </h2>
+<ol>
+    <li>Offizielle Webseite</li>
+    <ul>
+        <li>Besuche [https://nodejs.org](https://nodejs.org).</li>
+        <li>Lade das Installationspaket für dein Betriebssystem herunter (empfohlen: LTS-Version)</li>
+        <li>Führe das Installationsprogramm aus</li>
+    </ul>
+
+    <li>Paketmanager (Linux/Mac)</li>
+    <ul>
+
+        <li>Unter Ubuntu/Debian</li>
+        <li>sudo apt-get update</li>
+        <li>sudo apt-get install nodejs</li>
+        <li>sudo apt-get install npm</li>
+    </ul>
+
+    <li>Unter macOS (mit Homebrew)</li>
+    <ul>
+
+        <li>brew update</li>
+        <li>brew install node</li>
+    </ul>
+
+    <li>Unter Windows (mit Chocolatey)</li>
+    <ul>
+        <li>choco install nodejs-lts
+    </ul>
+</ol>
+<h2>überprüfen der Node.js-Installation</h2>
+<ol>
+    <li>die installierte Version prüfen : <b> node -v </b></li>
+
+    <li>NPM (Node Package Manager)prüfen : <b>npm -v</b></li>
+</ol>
+<h2>Installation von json-server</h2>
+
+<p>Installation über NPM</p>
+<ol>
+    <li><b>npm install -g json-server</b> - installiert den json-server global</li>
+    <li><b>json-server -v </b> - prüft, ob json-server erfolgreich installiert wurde</li>
+    <li>Wird eine Versionsnummer angezeigt, ist json-server korrekt installiert</li>
+</ol>
+
+<h2>Einfache Verwendung von json-server
+</h2>
+<p>Erstelle eine Datei `db.json` in einem beliebigen Verzeichnis, zum Beispiel - > tsconfig.json</p>
+
+<p>Starte den json-server, indem du in deinem Verzeichnis (wo sich `db.json` befindet) folgenden Befehl
+    ausführst:</p>
+
+<p>json-server --watch db.json --port 3000</p>
+
+<p>--watch db.json` teilt dem json-server mit, dass er die Datei „db.json“ überwachen und alle Änderungen direkt
+    übernehmen soll</p>
+<p>--port 3000` legt den Port fest (Standard ist 3000, aber du kannst auch einen anderen wählen)</p>
+
+<p>Der json-server ist nun unter `http://localhost:3000` erreichbar. Die Daten in `db.json` können z. B. unter
+    `http://localhost:3000/todos` oder `http://localhost:3000/users` abgerufen werden.</p>
+
+<h2>Beispiel: index.html mit GET-Request</h2>
+
+<p>Erstelle in deinem Projektverzeichnis eine Datei **index.html** mit folgendem Inhalt. Dieses einfache Beispiel
+    demonstriert, wie du mittels Fetch-API einen GET-Request an den json-server sendest und die Antwort in der
+    Konsole
+    ausgibst.</p>
+
+
+<h3>4.1 So führst du das Beispiel aus</h3>
+<ol>
+    <li>Stelle sicher, dass dein **json-server** über `json-server --watch db.json --port 3000` läuft.</li>
+    <li>Öffne **index.html** in deinem Browser (du kannst sie auch einfach per Doppelklick öffnen).</li>
+    <li>3. Klicke auf den Button „GET /todos“.</li>
+    <li>4. Sieh dir die Entwicklertools deines Browsers (F12 → „Konsole“) an, um die abgerufenen Daten zu sehen.</li>
+</ol>
+
+<h3>Zusammenfassung</h3>
+<ol>
+    <li>Node.js installieren** (entweder über offizielle Webseite oder Paketmanager).</li>
+    <li>json-server installieren** per `npm install -g json-server`.</li>
+    <li>Projekt aufsetzen**:</li>
+    <li>`db.json` erstellen.</li>
+    <li>`json-server --watch db.json --port 3000` starten.</li>
+    <li>index.html schreiben, die mit der Fetch-API eine GET-Anfrage an den json-server schickt.</li>
+</ol>
+<p>Mit diesen Schritten bist du in der Lage, einfache REST-ähnliche Endpoints mit dem json-server zu erstellen und
+anschließend per JavaScript (Fetch API) Daten abzurufen.</p>
+
+<h3>Weiteres</h3>
+
+<p>Unter folgendem Link findest du das github Repo zum json-server und weitere Informationen für die Verwendung:
+https://github.com/typicode/json-server</p>
+
+</body>
+</html>

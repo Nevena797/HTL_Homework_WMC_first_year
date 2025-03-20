@@ -1,0 +1,121 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for heading and content */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for ordered lists */
+ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Styling links inside lists */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Highlight important text */
+b {
+    font-weight: bold;
+    color: #0055a5;
+}
+
+/* Styling for the example section (GET Request) */
+code {
+    background-color: #f0f0f0;
+    padding: 3px 6px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+/* Adding some space and background for each step block */
+ol ul {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Style the headings */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Make the layout more responsive */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    ol {
+        padding-left: 15px;
+    }
+}
+
+/* Style for the footer, if any added later */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

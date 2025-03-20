@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <title>JSON Server GET-Request Beispiel</title>
+</head>
+<body>
+<h1>Todos abrufen</h1>
+<button id="fetchTodosBtn">GET /todos</button>
+
+<script>
+  const button = document.getElementById('fetchTodosBtn');
+
+  button.addEventListener('click', () => {
+    // Hier wird die URL des json-servers aufgerufen
+    fetch('http://localhost:3000/todos')
+            .then(response => response.json())
+            .then(data => {
+              console.log('Todos:', data);
+              alert('Todos wurden in der Konsole ausgegeben!');
+            })
+            .catch(error => {
+              console.error('Fehler beim Abrufen der Todos:', error);
+            });
+  });
