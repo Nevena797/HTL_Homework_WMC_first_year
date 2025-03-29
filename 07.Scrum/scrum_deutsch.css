@@ -1,0 +1,56 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    color: #0073e6;
+    text-align: center;
+}
+
+h2 {
+    color: #005bb5;
+    border-bottom: 2px solid #005bb5;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #003d7a;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Link-Styling */
+a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
